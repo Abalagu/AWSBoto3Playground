@@ -9,7 +9,7 @@ def subscribe(sns_client, email: str):
     response = sns_client.subscribe(
         TopicArn='arn:aws:sns:us-east-2:174995164214:FlaskPushSNS',
         Protocol='email',
-        Endpoint=email,  # tomford199503@gmail.com
+        Endpoint=email,
         ReturnSubscriptionArn=True
     )
     return response
